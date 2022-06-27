@@ -23,6 +23,7 @@
     "@nrwl/eslint-plugin-nx": "14.3.6",
     "@nrwl/jest": "14.3.6",
     "@nrwl/linter": "14.3.6",
+    "@nrwl/nx-react-workshop": "0.1.24",
     "@nrwl/react": "14.3.6",
     "@nrwl/web": "14.3.6",
     "@nrwl/workspace": "14.3.6",

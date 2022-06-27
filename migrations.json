@@ -1,0 +1,28 @@
+{
+  "migrations": [
+    {
+      "version": "0.1.1",
+      "description": "Complete Lab 1",
+      "cli": "nx",
+      "implementation": "./src/migrations/complete-lab-1/complete-lab-1",
+      "package": "@nrwl/nx-react-workshop",
+      "name": "complete-lab-1"
+    },
+    {
+      "version": "0.1.2",
+      "description": "Complete Lab 2",
+      "cli": "nx",
+      "implementation": "./src/migrations/complete-lab-2/complete-lab-2",
+      "package": "@nrwl/nx-react-workshop",
+      "name": "complete-lab-2"
+    },
+    {
+      "version": "0.1.3",
+      "description": "Complete Lab 3",
+      "cli": "nx",
+      "implementation": "./src/migrations/complete-lab-3/complete-lab-3",
+      "package": "@nrwl/nx-react-workshop",
+      "name": "complete-lab-3"
+    }
+  ]
+}

@@ -16,7 +16,7 @@
         "polyfills": "apps/store/src/polyfills.ts",
         "tsConfig": "apps/store/tsconfig.app.json",
         "assets": ["apps/store/src/favicon.ico", "apps/store/src/assets"],
-        "styles": ["apps/store/src/styles.scss"],
+        "styles": ["apps/store/src/styles.css"],
         "scripts": [],
         "webpackConfig": "@nrwl/react/plugins/webpack"
       },
