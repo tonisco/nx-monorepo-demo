@@ -11,13 +11,14 @@ import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 import CardMedia from '@material-ui/core/CardMedia';
 import { formatRating } from '@bg-hoard/store/util-formatters';
+import {Game} from '@bg-hoard/lib-util-interface'
 
 /* eslint-disable-next-line */
 export interface StoreFeatureGameDetailProps {}
 
 export function StoreFeatureGameDetail(props: StoreFeatureGameDetailProps) {
   const [state, setState] = useState<{
-    data: any;
+    data: Partial<Game>;
     loadingState: 'success' | 'error' | 'loading';
   }>({
     data: {},

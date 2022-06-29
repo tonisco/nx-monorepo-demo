@@ -1,0 +1,23 @@
+{
+  "$schema": "..\\..\\..\\node_modules\\nx\\schemas\\project-schema.json",
+  "sourceRoot": "libs/lib-util-interface/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/lib-util-interface/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/lib-util-interface"],
+      "options": {
+        "jestConfig": "libs/lib-util-interface/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  }
+}
