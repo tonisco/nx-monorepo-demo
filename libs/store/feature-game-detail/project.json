@@ -2,7 +2,7 @@
   "$schema": "..\\..\\..\\node_modules\\nx\\schemas\\project-schema.json",
   "sourceRoot": "libs/store/feature-game-detail/src",
   "projectType": "library",
-  "tags": [],
+  "tags": ["scope:store", "type:feature"],
   "targets": {
     "lint": {
       "executor": "@nrwl/linter:eslint",

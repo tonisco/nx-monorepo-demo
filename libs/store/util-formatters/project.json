@@ -2,7 +2,7 @@
   "$schema": "..\\..\\..\\node_modules\\nx\\schemas\\project-schema.json",
   "sourceRoot": "libs/store/util-formatters/src",
   "projectType": "library",
-  "tags": [],
+  "tags": ["scope:store","type:util"],
   "targets": {
     "lint": {
       "executor": "@nrwl/linter:eslint",

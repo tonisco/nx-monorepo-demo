@@ -2,7 +2,7 @@
   "$schema": "..\\..\\..\\node_modules\\nx\\schemas\\project-schema.json",
   "sourceRoot": "libs/lib-util-interface/src",
   "projectType": "library",
-  "tags": [],
+  "tags": ["scope:shared","type:util"],
   "targets": {
     "lint": {
       "executor": "@nrwl/linter:eslint",

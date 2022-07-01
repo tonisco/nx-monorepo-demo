@@ -1,7 +1,9 @@
 {
   "$schema": "..\\..\\node_modules\\nx\\schemas\\project-schema.json",
-  "sourceRoot": "apps/store/src",
   "projectType": "application",
+  "root":"apps/store",
+  "sourceRoot": "apps/store/src",
+  "prefix":"bg-hoard",
   "targets": {
     "build": {
       "executor": "@nrwl/web:webpack",
@@ -77,5 +79,5 @@
       }
     }
   },
-  "tags": []
+  "tags": ["scope:store","type:app"]
 }
