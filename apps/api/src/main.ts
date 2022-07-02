@@ -5,10 +5,12 @@
 
 import * as express from 'express';
 import { getAllGames, getGame } from './app/games.repository';
+import { sendNotification } from '@bg-hoard/api/util-notification';
 
 const app = express();
 
 app.get('/api/games', (req, res) => {
+  sendNotification('John');
   res.send(getAllGames());
 });
 
