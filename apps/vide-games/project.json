@@ -1,0 +1,83 @@
+{
+  "$schema": "..\\..\\node_modules\\nx\\schemas\\project-schema.json",
+  "sourceRoot": "apps/vide-games/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/web:webpack",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "compiler": "babel",
+        "outputPath": "dist/apps/vide-games",
+        "index": "apps/vide-games/src/index.html",
+        "baseHref": "/",
+        "main": "apps/vide-games/src/main.tsx",
+        "polyfills": "apps/vide-games/src/polyfills.ts",
+        "tsConfig": "apps/vide-games/tsconfig.app.json",
+        "assets": [
+          "apps/vide-games/src/favicon.ico",
+          "apps/vide-games/src/assets"
+        ],
+        "styles": ["apps/vide-games/src/styles.scss"],
+        "scripts": [],
+        "webpackConfig": "@nrwl/react/plugins/webpack"
+      },
+      "configurations": {
+        "development": {
+          "extractLicenses": false,
+          "optimization": false,
+          "sourceMap": true,
+          "vendorChunk": true
+        },
+        "production": {
+          "fileReplacements": [
+            {
+              "replace": "apps/vide-games/src/environments/environment.ts",
+              "with": "apps/vide-games/src/environments/environment.prod.ts"
+            }
+          ],
+          "optimization": true,
+          "outputHashing": "all",
+          "sourceMap": false,
+          "namedChunks": false,
+          "extractLicenses": true,
+          "vendorChunk": false
+        }
+      }
+    },
+    "serve": {
+      "executor": "@nrwl/web:dev-server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "vide-games:build",
+        "hmr": true
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "vide-games:build:development"
+        },
+        "production": {
+          "buildTarget": "vide-games:build:production",
+          "hmr": false
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/vide-games/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/apps/vide-games"],
+      "options": {
+        "jestConfig": "apps/vide-games/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": ["scope:vide-games"]
+}

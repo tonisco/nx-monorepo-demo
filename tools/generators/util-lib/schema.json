@@ -12,16 +12,33 @@
         "index": 0
       }
     },
-    "directory":{
-      "type":"string",
+    "directory": {
+      "type": "string",
       "description": "The scope of your lib",
-      "x-prompt":{
-        "message":"Which directory do you want the lib to be in",
-        "type":"list",
-        "items":[
-          {"value":"store","label":"store"},
-          {"value":"api","label":"api"},
-          {"value":"shared","label":"shared"}
+      "x-prompt": {
+        "message": "Which directory do you want the lib to be in",
+        "type": "list",
+        "items": [
+          {
+            "value": "api",
+            "label": "api"
+          },
+          {
+            "value": "shared",
+            "label": "shared"
+          },
+          {
+            "value": "store",
+            "label": "store"
+          },
+          {
+            "value": "vide-games",
+            "label": "vide-games"
+          },
+          {
+            "value": "vide",
+            "label": "vide"
+          }
         ]
       }
     }
